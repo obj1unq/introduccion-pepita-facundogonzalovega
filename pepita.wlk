@@ -61,3 +61,24 @@ object manzana {
         return valorBase * madurez
     }
 }
+
+object pepon {
+    var energia = 30
+
+
+    method volar(kilometros) {
+        energia -= 20 + 2 * kilometros
+    }
+    
+    method comer(alimento) {
+        energia += (alimento.calorias() / 2)
+    }
+
+    method estaCansado() {
+        return energia < 34
+    }
+
+    method energia() {
+        return energia
+    }
+}
