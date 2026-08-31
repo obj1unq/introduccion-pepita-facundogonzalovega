@@ -23,10 +23,10 @@ object pepita {
 }
 
 object alpiste {
-  const calorias = 25
+  const valorBase = 25
 
   method calorias() {
-    return calorias
+    return valorBase
   }
 }
 
@@ -47,7 +47,7 @@ object manzana {
 
 object manzana {
     var madurez = 1
-
+    const valorBase = 20
     method cambiarMadurez(nuevaMadurez) {
         if (nuevaMadurez >= 1 && nuevaMadurez <= 3) {
             madurez = nuevaMadurez
@@ -58,6 +58,6 @@ object manzana {
         if (madurez == 3) {
             return 0
         }
-        return 20 * madurez
+        return valorBase * madurez
     }
 }
