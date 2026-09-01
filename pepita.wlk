@@ -30,20 +30,6 @@ object alpiste {
   }
 }
 
-object manzana {
-    var madurez = 1
-
-    method madurez(nuevaMadurez) {
-        madurez = nuevaMadurez
-    }
-
-    method calorias() {
-        if (madurez == 3) {
-            return 0
-        }
-        return 20 * madurez
-    }
-}
 
 object manzana {
     var madurez = 1
